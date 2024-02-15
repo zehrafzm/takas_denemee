@@ -15,9 +15,11 @@
       "**/*"
     ],
     "ios": {
+      "package":"com.takas.takas",
       "supportsTablet": true
     },
     "android": {
+      "package":"com.takas.takas",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
