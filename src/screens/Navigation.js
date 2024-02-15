@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './Login';
 import HomeScreen from '../HomeScreen';
 import Signin from './SignIn';
-
+import Dashboard from './Dashboard';
 
 function Navigation() {
     const Stack = createStackNavigator();
@@ -16,7 +16,7 @@ function Navigation() {
         screenOptions={{
           headerStyle: {
             backgroundColor: 'white',
-            height:40 // Set the background color of the header
+            height:50 // Set the background color of the header
             //borderBottomWidth: 2, // Set a custom thickness for the header border
           },
           headerTintColor: 'black', // Set the text color of the header
@@ -29,6 +29,8 @@ function Navigation() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignIn" component={Signin} /> 
+        <Stack.Screen name="Dashboard" component={Dashboard} /> 
+        <Stack.Screen name="HomeScreen" component={HomeScreen} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );

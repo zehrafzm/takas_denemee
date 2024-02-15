@@ -18,17 +18,30 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Login</Text>
       </Pressable>
-      <StatusBar style="auto" />
+    <Pressable
+        style={styles.button}
+        onPress={() => navigation.navigate('Dashboard')}
+      >
+        <Text style={styles.buttonText}>Dashboard</Text>
+      </Pressable>
+        <StatusBar style="auto" />
     </View>
   );
 }
 
+//şimdilik bunlar kafana göre değiştirebilirsin
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  button:{
+    marginTop: 5,
+    backgroundColor: 'whitesmoke',
+    padding: 5,
+    borderRadius: 5,
   },
 });
 
