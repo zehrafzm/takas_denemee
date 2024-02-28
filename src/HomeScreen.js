@@ -24,6 +24,14 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Dashboard</Text>
       </Pressable>
+
+      <Pressable
+              style={styles.button}
+              onPress={() => navigation.navigate('AddBooks')}
+            >
+              <Text style={styles.buttonText}>AddBooks</Text>
+        </Pressable>
+
         <StatusBar style="auto" />
     </View>
   );

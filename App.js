@@ -6,7 +6,7 @@ import { AuthProvider } from './src/AuthContext';
 import Dashboard from './src/screens/Dashboard';
 
 export default function App() {
-  ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE); //yatay ya da portreye ayarlayalım css i rahat ayarlamak için bncc
+  //ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE); //yatay ya da portreye ayarlayalım css i rahat ayarlamak için bncc
 
   return (
     <AuthProvider> 

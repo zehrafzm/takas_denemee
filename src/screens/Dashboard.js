@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View,TextInput, TouchableOpacity, Pressable } from 'react-native';
 import React, { useState, useEffect, useRef } from "react";
 import { useAuth } from '../AuthContext';
 import { useNavigation } from '@react-navigation/native';
@@ -51,6 +51,31 @@ export default function Dashboard() {
       <Text> {currUser?.password || "user not logged in"}</Text>
       </View>
       <TouchableOpacity style={styles.button}  onPress={handleSignOut}><Text>sign out</Text></TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('AddBooks')}>
+        <Text style={styles.buttonText}>AddBooks</Text>
+      </TouchableOpacity>
+
+      <Pressable
+        style={styles.button}
+        onPress={() => navigation.navigate('Profile')}>
+        <Text style={styles.buttonText}>Profile</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.button}
+        onPress={() => navigation.navigate('History')}>
+        <Text style={styles.buttonText}>History</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.button}
+        onPress={() => navigation.navigate('RecentDeals')}>
+        <Text style={styles.buttonText}>RecentDeals</Text>
+      </Pressable>
+
       <StatusBar style="auto" />
   </View>
   );

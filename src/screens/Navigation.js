@@ -5,6 +5,10 @@ import Login from './Login';
 import HomeScreen from '../HomeScreen';
 import Signin from './SignIn';
 import Dashboard from './Dashboard';
+import AddBooks from './AddBooks';
+import Profile from './Profile';
+import History from './History';
+import RecentDeals from './RecentDeals';
 
 function Navigation() {
     const Stack = createStackNavigator();
@@ -30,7 +34,11 @@ function Navigation() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignIn" component={Signin} /> 
         <Stack.Screen name="Dashboard" component={Dashboard} /> 
-        <Stack.Screen name="HomeScreen" component={HomeScreen} /> 
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="AddBooks" component={AddBooks} />
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="History" component={History} />
+        <Stack.Screen name="RecentDeals" component={RecentDeals} />
       </Stack.Navigator>
     </NavigationContainer>
   );
